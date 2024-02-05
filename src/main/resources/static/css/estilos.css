@@ -8,6 +8,49 @@
     font-size: 20px;
 }
 
-p {
+/*p {
     background-color: lightcoral; 
+}
+*/
+/*
+a:link {
+    color: coral;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a:hover {
+    transition: 1s; 
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+a:active{
+    background-color: brown;
+    color:black ;
+}
+
+p:nth-child(even) {
+    background-color: red;
+}
+
+p:nth-child(odd) {
+    background-color: darkgreen;
+}
+
+*/
+
+.contenedor {
+    top: 12%;
+    left: 0;
+    height: 78%;
+    background-color: beige;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+        
 }
