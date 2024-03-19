@@ -24,7 +24,8 @@ public class CategoriaController {
     
     @GetMapping("/listado")
     public String listado(Model model) {
-        List<Categoria> lista = categoriaService.getCategorias(false);
+        //List<Categoria> lista = categoriaService.getCategorias(false);
+        List<Categoria> lista = categoriaService.buscarPorDescripcion("Tarjeta Madre");
         model.addAttribute("categorias", lista);
         model.addAttribute("totalCategoria",lista.size());
       

@@ -4,6 +4,7 @@ import com.Tienda.dao.CategoriaDao;
 import com.Tienda.domain.Categoria;
 import com.tienda.service.CategoriaService;
 import java.util.List;
+import javax.print.DocFlavor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -40,5 +41,11 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Transactional
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
+    }
+    
+    @Override
+    @Transactional(readOnly = true)
+    public List<Categoria> buscarPorDescripcion(String descripcion) {
+        return categoriaDao.findByDescripcion(descripcion);
     }
 }
